@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2773E33-BA24-40D5-8622-957FC3912862}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LearnWords_WF</RootNamespace>
+    <AssemblyName>LearnWords_WF</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Learn_Words.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Learn_Words_Library">
+      <HintPath>..\..\Learn_Words_Library\Learn_Words_Library\bin\Debug\Learn_Words_Library.dll</HintPath>
+    </Reference>
+    <Reference Include="Learn_Words_WF_Menus">
+      <HintPath>..\..\Learn_Words_WF_Menus\Learn_Words_WF_Menus\bin\Debug\Learn_Words_WF_Menus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WF_Settings_Library, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WF_Settings_Library\WF_Settings_Library\bin\Debug\WF_Settings_Library.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddDictionaryMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDictionaryMenu.Designer.cs">
+      <DependentUpon>AddDictionaryMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckingWord_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckingWord_Menu.Designer.cs">
+      <DependentUpon>CheckingWord_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseDictionaryToLearn_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseDictionaryToLearn_Menu.Designer.cs">
+      <DependentUpon>ChooseDictionaryToLearn_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseHowToAddDictionary_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseHowToAddDictionary_Menu.Designer.cs">
+      <DependentUpon>ChooseHowToAddDictionary_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseHowYouWouldLikeToEnterAnswersMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseHowYouWouldLikeToEnterAnswersMenu.Designer.cs">
+      <DependentUpon>ChooseHowYouWouldLikeToEnterAnswersMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseModeOfGeneratingWord_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseModeOfGeneratingWord_Menu.Designer.cs">
+      <DependentUpon>ChooseModeOfGeneratingWord_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChoosingAnswersMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoosingAnswersMenu.Designer.cs">
+      <DependentUpon>ChoosingAnswersMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmDeletingMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfirmDeletingMenu.Designer.cs">
+      <DependentUpon>ConfirmDeletingMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateNewDictionary_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateNewDictionary_Menu.Designer.cs">
+      <DependentUpon>CreateNewDictionary_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteDictionaryMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteDictionaryMenu.Designer.cs">
+      <DependentUpon>DeleteDictionaryMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DictionariesMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DictionariesMenu.Designer.cs">
+      <DependentUpon>DictionariesMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDictionary_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDictionary_Menu.Designer.cs">
+      <DependentUpon>EditDictionary_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EndOfCheckingMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EndOfCheckingMenu.Designer.cs">
+      <DependentUpon>EndOfCheckingMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Learn_Words.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Learn_Words.Designer.cs">
+      <DependentUpon>Learn_Words.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuNames.cs" />
+    <Compile Include="ModeOfChecking.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RightAnswerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RightAnswerMenu.Designer.cs">
+      <DependentUpon>RightAnswerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowContentOfTheDictionaryMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowContentOfTheDictionaryMenu.Designer.cs">
+      <DependentUpon>ShowContentOfTheDictionaryMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowDictionariesListMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowDictionariesListMenu.Designer.cs">
+      <DependentUpon>ShowDictionariesListMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewContentOfTheDictionaryMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewContentOfTheDictionaryMenu.Designer.cs">
+      <DependentUpon>ViewContentOfTheDictionaryMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WordsCheckingSystemMode.cs" />
+    <Compile Include="WrongAnswerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WrongAnswerMenu.Designer.cs">
+      <DependentUpon>WrongAnswerMenu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Learn_Words.resx">
+      <DependentUpon>Learn_Words.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ShowDictionariesListMenu.resx">
+      <DependentUpon>ShowDictionariesListMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Learn_Words.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
